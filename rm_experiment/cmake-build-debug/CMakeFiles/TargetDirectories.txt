@@ -1,0 +1,7 @@
+/home/shoshijak/Documents/CSCS/learning/mycode/rm_experiment/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/shoshijak/Documents/CSCS/learning/mycode/rm_experiment/cmake-build-debug/CMakeFiles/install/local.dir
+/home/shoshijak/Documents/CSCS/learning/mycode/rm_experiment/cmake-build-debug/CMakeFiles/install.dir
+/home/shoshijak/Documents/CSCS/learning/mycode/rm_experiment/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/shoshijak/Documents/CSCS/learning/mycode/rm_experiment/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/shoshijak/Documents/CSCS/learning/mycode/rm_experiment/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/shoshijak/Documents/CSCS/learning/mycode/rm_experiment/cmake-build-debug/CMakeFiles/rm_experiment_exe.dir

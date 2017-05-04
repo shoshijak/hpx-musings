@@ -1,0 +1,5 @@
+/home/shoshijak/Downloads/clion-2017.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DHPX_WITH_MALLOC=jemalloc -DHPX_DIR=~/Documents/CSCS/hpx-build/lib/cmake/HPX/ -G "CodeBlocks - Unix Makefiles" /home/shoshijak/Documents/CSCS/learning/mycode/rm_experiment
+-- Using jemalloc allocator.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/shoshijak/Documents/CSCS/learning/mycode/rm_experiment/cmake-build-debug
