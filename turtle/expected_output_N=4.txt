@@ -1,0 +1,38 @@
+understand why grandpa returns there 
+is Grandpa is useless to prove point? 
+make output more visibly pleasing
+rewrite expected output joliment
+
+Expected output for 4 levels of recursion: 
+
+Starting turtle-test... launching Grandpa-task
+Grandpa-task starting, launching Papa-task ...
+Papa-task starting, with level of recursion 4
+Recursing down to level 3...
+Recursion level 3 launched 
+Papa-task returned
+Grandpa-task returned
+
+		# stuff that have been launched by papa-task will be executed now
+Baby-task launched from level of recursion 4
+Baby-task starting ... 3 ... GM
+Papa-task starting, with level of recursion 3 
+Recursing down to level 2... 
+Recursion 2 level launched				** Papa becomes ready here ???
+Baby-task launched from level of recursion 3 
+Baby-task starting ... 3 ... GM
+Papa-task starting, with level of recursion 2
+Recursing down to level 1 
+Recursion level 1 launched 
+Baby-task launched from level of recursion 2
+Baby-task starting ... 3 ... GM 
+Papa-task starting, with level of recursion 1 
+termination condition met 
+Baby-task launched from level of recursion 1 
+Baby-task starting ... 3 ... GM 
+
+		# papa task is ready, ie all the recursions have been launched an have slept
+Papa-task became ready 
+Grandpa-task future is ready, we can move on 
+
+

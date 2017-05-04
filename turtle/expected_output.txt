@@ -1,0 +1,44 @@
+Expected output for turtle-main
+NREC 4 (2 is sufficient to prove the point
+launched with --hpx:threads = 1
+
+-----------------------------------------------------------------
+
+Testing the turtles-all-the-way-down-theory : 
+Simulating some setup step needed in the beginning of a program :
+all Papa-tasks and Baby-tasks must complete before we move on to the next step.
+
+
+Starting turtle-test... launching Papa-task
+Papa-task starting, with level of recursion 4
+Recursing down to level 3...
+Recursion level 3 launched
+Papa-task returned
+Baby-task launched from level of recursion 4
+--- Baby-task starting, simulating heavy computation
+--- Baby-task finished executing
+Papa-task starting, with level of recursion 3
+Recursing down to level 2...
+Recursion level 2 launched
+Baby-task launched from level of recursion 3
+--- Baby-task starting, simulating heavy computation
+--- Baby-task finished executing
+Papa-task starting, with level of recursion 2
+Recursing down to level 1...
+Recursion level 1 launched
+Baby-task launched from level of recursion 2
+--- Baby-task starting, simulating heavy computation
+--- Baby-task finished executing
+Papa-task starting, with level of recursion 1
+Papa-task: termination condition met
+Baby-task launched from level of recursion 1
+--- Baby-task starting, simulating heavy computation
+--- Baby-task finished executing
+
+*******************************************************
+***         Papa-task future is ready               ***
+***         Setup-step completed                    ***
+*******************************************************
+Setup step completed, we can move on to whatever the next step is now
+
+
