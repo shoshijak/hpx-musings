@@ -83,6 +83,11 @@ void print_system_characteristics(){
 //              << "pu                    : " << topo.get_pu_number(i, ec) << "\n"; //! how exactly does this work and what does it do?
     }
 
+    //! -------------------------------------- topology (masks)
+    hpx::cout << "[Topology] masks :\n"
+              << "machine               : " << std::bitset<20>(topo.get_machine_affinity_mask()) << "\n";
+
+
 /*    hpx::cout << "[Topology]\n"
               << "vector of socket numbers : \n";
     print_vector(topo.get_socket_numbers_());

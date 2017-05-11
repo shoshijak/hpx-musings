@@ -20,7 +20,11 @@ int hpx_main(int argc, char* argv[])
     // get a pointer to the resource_partitioner instance
     hpx::resource::resource_partitioner& rpart = hpx::get_resource_partitioner();
 
-    std::cout << "[hpx_main] got a ref to the resource_partitioner" << "\n";
+    std::cout << "[hpx_main] got a reference to the resource_partitioner" << "\n";
+
+    // print partition characteristics
+    std::cout << "[hpx_main] print resource_partitioner characteristics : " << "\n";
+    rpart.print_me();
 
     // print system characteristics
     //print_system_characteristics();

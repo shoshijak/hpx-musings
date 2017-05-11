@@ -20,14 +20,14 @@ int hpx_main(int argc, char* argv[])
     // get a pointer to the resource_partitioner instance
     hpx::resource::resource_partitioner& rpart = hpx::get_resource_partitioner();
 
-    std::cout << "[hpx_main] got a ref to the resource_partitioner" << "\n";
-
-//    rpart.add_resource(0, "blob"); // throws exception
+    std::cout << "[hpx_main] got a reference to the resource_partitioner" << "\n";
 
     // print system characteristics
     //print_system_characteristics();
 
     // print partition characteristics
+    std::cout << "[hpx_main] print resource_partitioner characteristics : " << "\n";
+    rpart.print_me();
 
     // get executors
 /*    auto network_executor = rm.executor_for_pool("network");
@@ -49,15 +49,14 @@ int main(int argc, char* argv[])
     std::cout << "[main] " << "obtained reference to the resource_partitioner\n";
 
     rp.create_thread_pool("first_pool");
-    rp.create_thread_pool("second_pool", hpx::resource::local);
-    rp.create_thread_pool("default_pool"); //! different function called create_default_pool !!!!
+    rp.create_thread_pool("second_pool", hpx::resource::abp_priority);
+//    rp.create_default_pool(hpx::resource::abp_priority);
 
     std::cout << "[main] " << "thread_pools created \n";
 
     rp.add_resource(0, "first_pool");
     rp.add_resource(1, "second_pool");
-    rp.add_resource(2, "default_pool");
-    rp.add_resource(3, "default_pool");
+//    rp.add_resource_to_default(2);
 
     // throws exception
     // rp.add_resource(2, "blob"); // (bad name)
