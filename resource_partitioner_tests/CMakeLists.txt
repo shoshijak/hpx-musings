@@ -29,3 +29,9 @@ add_hpx_executable(RP-main-withcmdline
         SOURCES main_withcmdline_defaultpool.cpp ~/Documents/CSCS/hpx/src/runtime/resource_partitioner.cpp ~/Documents/CSCS/hpx/src/runtime/threads/policies/affinity_data.cpp ~/Documents/CSCS/hpx/src/runtime/threads/threadmanager_base.cpp
         HEADERS
         COMPONENT_DEPENDENCIES iostreams)
+
+add_hpx_executable(RP-main-with-binding
+        ESSENTIAL
+        SOURCES main_with_binding.cpp ~/Documents/CSCS/hpx/src/runtime/resource_partitioner.cpp ~/Documents/CSCS/hpx/src/runtime/threads/policies/affinity_data.cpp ~/Documents/CSCS/hpx/src/runtime/threads/threadmanager_base.cpp
+        HEADERS
+        COMPONENT_DEPENDENCIES iostreams)

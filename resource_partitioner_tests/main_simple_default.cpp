@@ -4,32 +4,28 @@
 #include <hpx/include/iostreams.hpp>
 #include <hpx/include/runtime.hpp>
 #include <hpx/runtime/resource_partitioner.hpp>
+#include <hpx/runtime/threads/cpu_mask.hpp>
 
 #include "system_characteristics.h"
 
 int hpx_main(int argc, char* argv[])
 {
-    std::cout << "[hpx_main] starting ..." << "\n";
 
-    // get a pointer to the runtime instance
-    auto rt_ptr = hpx::get_runtime_ptr();
-    if(rt_ptr == nullptr)
-        throw std::runtime_error("[hpx main] couldn't get a pointer to the runtime");
-    std::cout << "[hpx_main] got a pointer to the runtime" << "\n";
+    hpx::cout << "[hpx_main] starting ..." << "\n";
 
     // get a pointer to the resource_partitioner instance
     hpx::resource::resource_partitioner& rpart = hpx::get_resource_partitioner();
 
-    std::cout << "[hpx_main] got a reference to the resource_partitioner" << "\n";
+    // print partition characteristics
+    hpx::cout << "\n\n [hpx_main] print resource_partitioner characteristics : " << "\n";
+    rpart.print_init_pool_data();
 
     // print partition characteristics
-    std::cout << "[hpx_main] print resource_partitioner characteristics : " << "\n";
-    rpart.print_me();
+    hpx::cout << "\n\n [hpx_main] print thread-manager characteristics : " << "\n";
+    hpx::threads::get_thread_manager().print_pools();
 
     // print system characteristics
     //print_system_characteristics();
-
-    // print partition characteristics
 
     return hpx::finalize();
 }

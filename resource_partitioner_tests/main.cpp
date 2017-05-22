@@ -22,12 +22,12 @@ int hpx_main(int argc, char* argv[])
 
     std::cout << "[hpx_main] got a reference to the resource_partitioner" << "\n";
 
-    // print system characteristics
-    //print_system_characteristics();
-
     // print partition characteristics
     std::cout << "[hpx_main] print resource_partitioner characteristics : " << "\n";
-    rpart.print_me();
+    rpart.print_pools();
+
+    // print system characteristics
+    //print_system_characteristics();
 
     // get executors
 /*    auto network_executor = rm.executor_for_pool("network");
@@ -50,17 +50,12 @@ int main(int argc, char* argv[])
 
     rp.create_thread_pool("first_pool");
     rp.create_thread_pool("second_pool", hpx::resource::abp_priority);
-//    rp.create_default_pool(hpx::resource::abp_priority);
 
     std::cout << "[main] " << "thread_pools created \n";
 
-    rp.add_resource(0, "first_pool");
-    rp.add_resource(1, "second_pool");
+    rp.add_resource(1, "first_pool");
+    rp.add_resource(0, "second_pool");
 //    rp.add_resource_to_default(2);
-
-    // throws exception
-    // rp.add_resource(2, "blob"); // (bad name)
-    // hpx::resource_partitioner rp2; // (cannot instantiate > 1 resource partitioner)
 
     std::cout << "[main] " << "resources added to thread_pools \n";
 
