@@ -29,7 +29,7 @@ int hpx_main(boost::program_options::variables_map& vm)
 
     // print partition characteristics
     std::cout << "[hpx_main] print resource_partitioner characteristics : " << "\n";
-    rpart.print_me();
+    rpart.print_init_pool_data();
     //print_system_characteristics();
 
     return hpx::finalize();

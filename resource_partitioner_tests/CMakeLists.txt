@@ -14,7 +14,7 @@ find_package(HPX)
 
 add_hpx_executable(RP-main
         ESSENTIAL
-        SOURCES main.cpp ~/Documents/CSCS/hpx/src/runtime/resource_partitioner.cpp ~/Documents/CSCS/hpx/src/runtime/threads/policies/affinity_data.cpp ~/Documents/CSCS/hpx/src/runtime/threads/threadmanager_base.cpp
+        SOURCES main.cpp ~/Documents/CSCS/hpx/src/runtime/resource_partitioner.cpp ~/Documents/CSCS/hpx/src/runtime/threads/policies/affinity_data.cpp ~/Documents/CSCS/hpx/src/runtime/threads/threadmanager_base.cpp ~/Documents/CSCS/hpx/src/runtime/threads/executors/customized_pool_executors.cpp
         HEADERS
         COMPONENT_DEPENDENCIES iostreams)
 
